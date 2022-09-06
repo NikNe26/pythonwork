@@ -35,10 +35,7 @@
 #
 # HW 2.4.
 #
-# a = input('Введите свой список:').split()
-
-a = 'gvk vgrfeg  gvtrehgtreh grehjji jklkuiol'
-b = a.split()
+a = input('Введите свой список:').split()
 for el,u in enumerate(b, 1):
     if len(u) <10:
         print(el, u)

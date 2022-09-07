@@ -41,3 +41,15 @@ for el,u in enumerate(b, 1):
         print(el, u)
     else:
         print(el, u[0:10])
+#HW 2.5.
+
+my_list = [7, 5, 3, 3, 2]
+el = int(input('Введите новый элемент:'))
+for i in range(len(my_list)-1):
+    if el >= my_list[i]:
+        my_list.insert(i, el)
+        break
+    elif el <= my_list[-1]:
+        my_list.insert(len(my_list),el)
+        break
+print(my_list)

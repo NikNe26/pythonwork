@@ -5,9 +5,9 @@
 #         return print(num1 / num2)
 #     else:
 #         print('Ошибка на ноль делить нельзя!')
-## number1 = int(input('Введите первое число: '))
+# number1 = int(input('Введите первое число: '))
 # number2 = int(input('Введите первое число: '))
-## my_func(number1, number2)
+# my_func(number1, number2)
 
 # HW 3.2.
 
@@ -54,4 +54,43 @@
 # my_func(n, s)
 
 # HW 3.5.
+a = input('Введите цифры:').split()
+b = int(a)
+print(a)
 
+def print_num():
+    while True:
+        Li = int(input('Введите числа: ')).split()
+        for num in Li:
+            if num == '-':
+                return
+            else:
+                print(sum(int(num)))
+
+print_num()
+
+Li = input('Введите числа: ')
+print(sum(int(Li)))
+
+Li = input('Введите числа: ').int(split())
+print(Li)
+
+# HW 3.6.
+
+# def int_func(my_str):
+#     return my_str.capitalize()
+#
+# text = input('Введите слова: ')
+# print(int_func(text))
+
+# HW 3.7.
+
+# def int_func(my_str):
+#     my_list = []
+#     for el in my_str.split():
+#         my_list.append(el.capitalize())
+#     result = ' '.join(my_list)
+#     return result
+#
+# text = input('Введите слова: ')
+# print(int_func(text))

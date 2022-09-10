@@ -54,26 +54,24 @@
 # my_func(n, s)
 
 # HW 3.5.
-a = input('Введите цифры:').split()
-b = int(a)
-print(a)
-
-def print_num():
-    while True:
-        Li = int(input('Введите числа: ')).split()
-        for num in Li:
-            if num == '-':
-                return
-            else:
-                print(sum(int(num)))
-
-print_num()
-
-Li = input('Введите числа: ')
-print(sum(int(Li)))
-
-Li = input('Введите числа: ').int(split())
-print(Li)
+# def my_func(num_text):
+#     global num_sum
+#     for i_num in num_text.split():
+#         if i_num.isdigit():
+#             num_sum += int(i_num)
+#         elif i_num in ( '+', '-', '!', '*', '/', '@'):
+#             global flag
+#             flag = False
+#             break
+#     return num_sum
+#
+#
+# while True:
+#     if flag:
+#         num_str = input( 'Введите числа: ')
+#         print(my_func(num_str))
+#     else:
+#         break
 
 # HW 3.6.
 

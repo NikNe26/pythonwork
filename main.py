@@ -1,3 +1,4 @@
+# HW 3.1.
 
 # def my_func(num1, num2):
 #     if num2 != 0:
@@ -8,6 +9,7 @@
 # number2 = int(input('Введите первое число: '))
 ## my_func(number1, number2)
 
+# HW 3.2.
 
 # def my_spr(name, surname, age, city, email, mobi):
 #     print(f'Имя: {name} Фамилия: {surname} Год рождения: {age} Город проживания: {city} Email:{email} Телефон: {mobi}')
@@ -21,6 +23,7 @@
 #
 # my_spr(n, s, a, c, e, m)
 
+# HW 3.3.
 
 # def my_func(a, b, c):
 #     if a >= c and b >= c:
@@ -31,4 +34,24 @@
 #         print(b + c)
 # my_func(int(input()), int(input()), int(input()))
 
+# HW 3.4.
+
+# def my_func(x, y):
+#     print(x ** y)
+#
+# n = float(input('X: '))
+# s = int(input('Y: '))
+# my_func(n, s)
+
+# def my_func(x, y):
+#     a = x
+#     for i in range(abs(y)-1):
+#         a *= x
+#     print(1 / a)
+#
+# n = float(input('X: '))
+# s = int(input('Y: '))
+# my_func(n, s)
+
+# HW 3.5.
 

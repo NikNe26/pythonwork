@@ -44,16 +44,27 @@
 #     line = f.read().splitlines()
 #     summ = []
 #     for el in line:
-#         i = el.split()
-#         if float(i[1]) < 20000:
-#             print('Менее 20000: ', i[0])
-#         summ.append(i[1])
+#         el = el.split()
+#         if float(el[1]) < 20000:
+#             print('Менее 20000: ', el[0])
+#         summ.append(el[1])
 # print(f'Средний оклад: {sum(map(float, summ)) / len(summ)}')
 
 #HW_5.4
 
 # di = {'One':'Один', 'Two':'Два', 'Three':'Три', 'Four':'Четыре'}
-with open(r'One.txt', 'r', encoding='utf-8') as f:
-    print(f)
-    # line = f.read().splitlines()
-    # print(line)
+# rus = []
+# with open(r'One.txt', 'r', encoding='utf-8') as f:
+#     # line = f.read().splitlines()
+#     for el in f:
+#         el = el.split(' ', 1)
+#         rus.append(di[el[0]] + el[1])
+#     print(rus)
+# with open(r'One_new.txt', 'w', encoding='utf-8') as f_2:
+#     f_2.writelines(rus)
+
+#HW_5.5
+
+# with open(r'number.txt', 'r', encoding='utf-8') as f:
+#     line = f.readline().split()
+#     print(f'Сумма чисел:{sum(map(int,line))}')

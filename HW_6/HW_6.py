@@ -36,18 +36,28 @@
 # HW_6.3.
 
 # class Worker:
-#     def __init__(self, wage, bonus):
-#         self._income_ = {'wage': wage, 'bonus': bonus}
+#     def __init__(self, wage, bonus, name, surname, position):
+#         self._income = {'wage': wage, 'bonus': bonus}
+#         self.wage = wage
+#         self.bonus = bonus
+#         self.name = name
+#         self.surname = surname
+#         self.position = position
+#
 #
 # class Position(Worker):
 #
-#     def get_full_name(self, name, surname):
-#         print(f' Фамилия: {surname} Имя: {name}')
+#     def __init__(self, wage, bonus, name, surname, position):
+#         super().__init__(wage, bonus, name, surname, position)
 #
-#     def get_total_income(self, wage, bonus):
-#         super().__init__(wage, bonus)
-#         self.get_total = int(wage) + int(bonus)
-#         print(f'Доход с учетом премии: {self.get_total_income}')
+#     def get_full_name(self):
+#         return f' Фамилия: {self.surname} Имя: {self.name}'
 #
-# wor = Position()
-# print(wor.get_total_income(250, 30))
+#     def get_total_income(self):
+#         self.get_total = int(self.wage) + int(self.bonus)
+#         return f'Доход с учетом премии: {self.get_total}'
+#
+#
+# wor = Position(250, 30, 'NIK', 'Nes', 'md')
+# print(wor.get_full_name())
+# print(wor.get_total_income())

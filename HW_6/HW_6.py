@@ -61,3 +61,68 @@
 # wor = Position(250, 30, 'NIK', 'Nes', 'md')
 # print(wor.get_full_name())
 # print(wor.get_total_income())
+
+# HW_6.4.
+# import random
+
+
+# class Car:
+#     def __init__(self, speed, color, name, is_police=False):
+#         self.speed = speed
+#         self.color = color
+#         self.name = name
+#         self.is_police = is_police
+#
+#     def go(self):
+#         if self.speed > 0:
+#             self.speed += random.randint(5, 20)
+#             print(f'{self.name}, набрала скорость до {self.speed} км/ч')
+#         else:
+#             self.speed += random.randint(30, 50)
+#             print(f'{self.name}, набрала скорость до {self.speed} км/ч')
+#
+#     def stop(self):
+#         if self.speed > 0:
+#             self.speed = 0
+#             print(f'{self.name} остановлена!')
+#         else:
+#             print(f'{self.name} стоп')
+#
+#     def turn(self, direction):
+#         direction = 'куда глаза глядят'
+#         print(f'{self.name} повернула {direction}')
+#
+#     def show_speed(self):
+#         return f'{self.speed}'
+#
+#
+# class TownCar(Car):
+#     def __init__(self, speed, color, name):
+#         super().__init__(speed, color, name)
+#
+#     def show_speed(self):
+#         if self.speed > 60:
+#             return "Скорость превышена, снизь скорость  ..."
+#         else:
+#             return f"{self.speed}"
+#
+#
+# class WorkCar(Car):
+#     def __init__(self, speed, color, name):
+#         super().__init__(speed, color, name)
+#
+#     def show_speed(self):
+#         if self.speed > 40:
+#             return "Скорость превышена, снизь скорость  ..."
+#         else:
+#             return f"{self.speed}"
+#
+#
+# class SportCar(Car):
+#     def __init__(self, speed, color, name):
+#         super().__init__(speed, color, name)
+#
+#
+# class PoliceCar(Car):
+#     def __init__(self, speed, color, name):
+#         super().__init__(speed, color, name, is_police=True)
